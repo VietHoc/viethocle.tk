@@ -8,23 +8,33 @@ body {
     background-color: #ffeff5;
 }
 
+.song {
+    margin: 5px 15px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #c55e5e;
+    height: auto;
+    color: #ffeff5;
+    cursor: pointer;
+}
+
 #app-cover {
     position: absolute;
-    top: 50%;
+    top: 80%;
     right: 0;
     left: 0;
-    width: 430px;
+    width: 600px;
     height: 100px;
     margin: -4px auto;
 }
 
 #bg-artwork {
     position: fixed;
-    top: -30px;
+    top: 50%;
     right: -30px;
     bottom: -30px;
     left: -30px;
-    background-image: url("https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg");
+    background-image: url("images/_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -35,7 +45,7 @@ body {
 
 #bg-layer {
     position: fixed;
-    top: 0;
+    top: 40%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -270,7 +280,7 @@ body {
 #player-controls {
     width: 250px;
     height: 100%;
-    margin: 0 5px 0 141px;
+    margin: 0 100px 0 141px;
     float: right;
     overflow: hidden;
 }

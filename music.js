@@ -246,5 +246,39 @@ $(function () {
     });
   }
 
+  function initAlbums() {
+    for (var index = 0; index < 5; index++) {
+      $('#song-name-' + (index + 1)).text(albums[index]);
+      $('#singer-' + (index + 1)).text(trackNames[index]);
+    }
+
+    $('#song-1').click(() => {
+      playMusic(-1);
+    });
+
+    $('#song-2').click(() => {
+      playMusic(0);
+    });
+
+    $('#song-3').click(() => {
+      playMusic(1);
+    });
+
+    $('#song-4').click(() => {
+      playMusic(2);
+    });
+
+    $('#song-5').click(() => {
+      playMusic(3);
+    });
+  }
+
+  function playMusic(index) {
+    currIndex = index;
+    selectTrack(0);
+    playPause();
+  }
+
   initPlayer();
+  initAlbums();
 });
